@@ -1,0 +1,23 @@
+*{
+    margin:10px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font: 50;
+    background: pink;
+    text-align: center;
+}
+h1{
+    background: linear-gradient(violet, powderblue);
+    text-align: center;
+}
+button{
+    background-color: palegreen;
+}
+h2{
+    background-color: palevioletred;
+    text-align: center;
+}
+h3{
+    background-color: plum;
+    text-align: center;
+}

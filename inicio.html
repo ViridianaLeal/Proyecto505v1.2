@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD CONTACTOS</title>
+    <link rel="shortcut icon" href="assets/img/cecytem.png" type="image/x-icon">
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body onload="cargarContactos();checarSesion();">
+    <header>
+        <h1>PAÑALES ECOLOGICOS</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="cliente.html">Cliente</a></li>
+            <li><a href="auto.html">Auto</a></li>
+            <li><a href="alumno.html">Alumno</a></li>
+            <li><button onclick="cerrarSesion()">Cerrar Sesión</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>CRUD CONTACTOS</h2>
+            <div>
+                <button><i>Agregar Contacto</i></button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido Paterno</th>
+                        <th>Apellido Materno</th>
+                        <th>Teléfono</th>
+                        <th>Correo</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="registros">
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Derechos de autor © 2023. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal AGREGAR CONTACTO -->
+    <div>
+        <div>
+            <h3>AGREGAR CONTACTO</h3>
+            <button aria-label="Close"></button>
+        </div>
+        <div>
+            <form id="formAgregar">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Nombre">
+                </div>
+                <div>
+                    <label for="ap">Apellido Paterno</label>
+                    <input type="text" id="ap" placeholder="Apellido Paterno">
+                </div>
+                <div>
+                    <label for="am">Apellido Materno</label>
+                    <input type="text" id="am" placeholder="Apellido Materno">
+                </div>
+                <div>
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" id="telefono" placeholder="Teléfono">
+                </div>
+                <div>
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" placeholder="example@dominio.com">
+                </div>
+            </form>
+        </div>
+        <div>
+            <button><i>Cancelar</i></button>
+            <button onclick="agregarContacto()"><i>Guardar</i></button>
+        </div>
+    </div>
+
+    <!-- Modal EDITAR CONTACTO -->
+    <div>
+        <div>
+            <h3>EDITAR CONTACTO</h3>
+            <button aria-label="Close"></button>
+        </div>
+        <div>
+            <form id="formEditar">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="enombre" placeholder="Nombre">
+                </div>
+                <div>
+                    <label for="ap">Apellido Paterno</label>
+                    <input type="text" id="eap" placeholder="Apellido Paterno">
+                </div>
+                <div>
+                    <label for="am">Apellido Materno</label>
+                    <input type="text" id="eam" placeholder="Apellido Materno">
+                </div>
+                <div>
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" id="etelefono" placeholder="Teléfono">
+                </div>
+                <div>
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="ecorreo" placeholder="example@dominio.com">
+                </div>
+            </form>
+        </div>
+        <div>
+            <input type="hidden" id="contactoid">
+            <button><i>Cancelar</i></button>
+            <button onclick="editarContacto()"><i>Guardar</i></button>
+        </div>
+    </div>
+
+    <script src="assets/js/appCRUD.js"></script>
+</body>
+</html>
