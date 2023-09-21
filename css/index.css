@@ -1,0 +1,31 @@
+*{
+
+}
+
+body{
+}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+body {
+  background: #ffffff;
+}
+
+.ecopio{
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 700;
+  font-size: 13rem;
+  position: absolute;
+  text-shadow: -15px 5px 20px #ced0d3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #F9f1cc;
+  text-shadow: 5px 5px 0px #a8e4a0, 
+    10px 10px 0px #7fcc5c, 
+    15px 15px 0px  #37ad2d, 
+    20px 20px 0px #c89bda, 
+    25px 25px 0px #8585c0, 
+    30px 30px 0px #4d1d83;
+}
